@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+
+.display-4 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.btn-dark {
+  margin-top: 2%;
+}
+
+img {
+  float: center;
+  width: 25%;
+  height: 25%;
+}
