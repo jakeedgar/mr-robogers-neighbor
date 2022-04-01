@@ -1,24 +1,27 @@
 // UTILITY LOGIC 
-function noInputtedWord(text) {
-  if ((text.trim().length === 0)) {
+function noInputtedWord(input) {
+  if ((input.trim().length === 0)) {
     return alert("Please enter a Number");
   }
 }
 
-function filterPunctuation(word) {
-  return word.split("").filter(function(character) {
-    return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(character);
+function filterPunctuation(input) {
+  return input.split("").filter(function(number) {
+    return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(number);
   }).join("");
 }
 
 // BUSINESS LOGIC 
 function beepBoop(input) {
-  if (noInputtedWord(text)) {
-    return 0;
+  let output = []
+  for (let i = 0; i <= input; i++) {
+    let strInput = i.toString();
+    if (strInput.includes("3")) {
+      output.push("Won't you be my neighbor?");
+    } else {
+      output.push(i);
+    } 
   }
-  
-  for (i = 0; i <= input; i++)
-  console.log(i)
+  return output;
 }
-
 // UI LOGIC 
