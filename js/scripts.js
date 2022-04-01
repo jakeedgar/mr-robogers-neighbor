@@ -1,15 +1,7 @@
 // UTILITY LOGIC 
-function noInputtedWord(input) {
-  let sInput = input.toString();
-  if ((sInput.trim().length === 0)) {
-    return alert("Please enter a Number");
-  }
-}
+
 // BUSINESS LOGIC 
 function beepBoop(input, userName) {
-  if (noInputtedWord(input) === true) {
-    return 0;
-  }
   let output = []
   for (let i = 0; i <=  input; i++) {
     let strInput = i.toString();
@@ -19,7 +11,7 @@ function beepBoop(input, userName) {
       output.push(" Boop");
     } else if (strInput.includes("1")){
       output.push(" Beep");
-    }  else {
+    } else {
       output.push(" " + i);
     } 
   }
@@ -32,9 +24,7 @@ $(document).ready(function() {
     e.preventDefault();
     const userName = $("#name-input").val();
     const userInput = $("#input").val();
-    console.log(userInput);
     const roboger = beepBoop(userInput, userName).toString();
-    console.log(roboger);
     $("#output").text(roboger);
   });
 });
