@@ -7,8 +7,9 @@ function noInputtedWord(input) {
 }
 
 // function filterPunctuation(input) {
-//   return input.split("").filter(function(number) {
-//     return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(number);
+//   return input.split("").filter(function(character) {
+//     console.log(character);
+//     return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(character);
 //   }).join("");
 // }
 
@@ -18,7 +19,7 @@ function beepBoop(input) {
     return 0;
   }
   let output = []
-  for (let i = 0; i <= input; i++) {
+  for (let i = 0; i <=  input; i++) {
     let strInput = i.toString();
     if (strInput.includes("3")) {
       output.push("Won't you be my neighbor?");
