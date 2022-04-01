@@ -5,14 +5,6 @@ function noInputtedWord(input) {
     return alert("Please enter a Number");
   }
 }
-
-// function filterPunctuation(input) {
-//   return input.split("").filter(function(character) {
-//     console.log(character);
-//     return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(character);
-//   }).join("");
-// }
-
 // BUSINESS LOGIC 
 function beepBoop(input) {
   if (noInputtedWord(input) === true) {
