@@ -24,6 +24,8 @@ function beepBoop(input) {
       output.push("Won't you be my neighbor?");
     } else if (strInput.includes("2")) {
       output.push("Boop");
+    } else if (strInput.includes("1")){
+      output.push("Beep");
     }  else {
       output.push(i);
     } 
