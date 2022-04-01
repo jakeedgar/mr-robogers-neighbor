@@ -8,9 +8,9 @@ Test: "It should return an alert if the user inputs an empty string."
 Code: beepBoop(" ");
 Expected Output: "ALERT: Please Enter a Number."
 
-Test: "It should remove all punctuation from the users input"
+Test: "It should return an alert if punctuation is present in the users input"
 Code: beepBoop(5?);
-Expected Output: [0, 1, 2, 3, 4, 5]
+Expected Output: "ALERT: Please Remove Punctuation."
 
 Test: "It should return an array of numbers from 0 to the user's input, and replace all numbers that include a 3 with the phrase "Won't you be my neighbor?" 
 Code: beepBoop(5);

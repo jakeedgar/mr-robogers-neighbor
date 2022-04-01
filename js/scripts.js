@@ -5,8 +5,18 @@ function noInputtedWord(text) {
   }
 }
 
+function filterPunctuation(word) {
+  return word.split("").filter(function(character) {
+    return !".?,!;:'\"%$#@!^&*()_-+=\\|[]{}`~/".includes(character);
+  }).join("");
+}
+
 // BUSINESS LOGIC 
 function beepBoop(input) {
+  if (noInputtedWord(text)) {
+    return 0;
+  }
+  
   for (i = 0; i <= input; i++)
   console.log(i)
 }
