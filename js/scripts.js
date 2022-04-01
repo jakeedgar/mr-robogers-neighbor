@@ -6,7 +6,7 @@ function noInputtedWord(input) {
   }
 }
 // BUSINESS LOGIC 
-function beepBoop(input) {
+function beepBoop(input, userName) {
   if (noInputtedWord(input) === true) {
     return 0;
   }
@@ -14,7 +14,7 @@ function beepBoop(input) {
   for (let i = 0; i <=  input; i++) {
     let strInput = i.toString();
     if (strInput.includes("3")) {
-      output.push(" Won't you be my neighbor?");
+      output.push(" " + userName + "," + " Won't you be my neighbor?");
     } else if (strInput.includes("2")) {
       output.push(" Boop");
     } else if (strInput.includes("1")){
@@ -30,9 +30,10 @@ function beepBoop(input) {
 $(document).ready(function() {
   $("#form").submit(function(e) {
     e.preventDefault();
+    const userName = $("#name-input").val();
     const userInput = $("#input").val();
     console.log(userInput);
-    const roboger = beepBoop(userInput).toString();
+    const roboger = beepBoop(userInput, userName).toString();
     console.log(roboger);
     $("#output").text(roboger);
   });
