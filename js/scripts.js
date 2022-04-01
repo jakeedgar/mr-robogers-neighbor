@@ -22,15 +22,26 @@ function beepBoop(input) {
   for (let i = 0; i <=  input; i++) {
     let strInput = i.toString();
     if (strInput.includes("3")) {
-      output.push("Won't you be my neighbor?");
+      output.push(" Won't you be my neighbor?");
     } else if (strInput.includes("2")) {
-      output.push("Boop");
+      output.push(" Boop");
     } else if (strInput.includes("1")){
-      output.push("Beep");
+      output.push(" Beep");
     }  else {
-      output.push(i);
+      output.push(" " + i);
     } 
   }
   return output;
 }
 // UI LOGIC 
+
+$(document).ready(function() {
+  $("#form").submit(function(e) {
+    e.preventDefault();
+    const userInput = $("#input").val();
+    console.log(userInput);
+    const roboger = beepBoop(userInput).toString();
+    console.log(roboger);
+    $("#output").text(roboger);
+  });
+});
