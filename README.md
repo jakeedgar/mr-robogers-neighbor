@@ -32,11 +32,11 @@ Test: "It should return an array of numbers from 0 to the user's input, and repl
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5]
 
-Test: "It should return an array of numbers from 0 to the user's input, and replace all numbers that include a 2, but not a 3 with the word "Beep". 
+Test: "It should return an array of numbers from 0 to the user's input, and replace all numbers that include a 2, but not a 3 with the word "boop". 
 Code: beepBoop(2);
 Expected Output: [0, 1, Boop]
 
-Test: "It should return an array of numbers from 0 to the user's input, and replace all numbers that include a 1, but not a 2 or 3 with the word "Boop" 
+Test: "It should return an array of numbers from 0 to the user's input, and replace all numbers that include a 1, but not a 2 or 3 with the word "Beep" 
 Code: beepBoop(1);
 Expected Output: [0, Beep]
 
